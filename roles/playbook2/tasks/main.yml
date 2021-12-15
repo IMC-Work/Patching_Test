@@ -1,7 +1,7 @@
 ---
- - name: welcome to Playbook2 - patching one
-   debug:
-     msg: " welcome to Playbook2 - call Playbook3 (del wsus)"
+- name: welcome to Playbook2 - patching one
+  debug:
+    msg: " welcome to Playbook2 - call Playbook3 (del wsus)"
 
 - name: call the roll Playbook3 - Delete WSUS Settings
   include_role:
