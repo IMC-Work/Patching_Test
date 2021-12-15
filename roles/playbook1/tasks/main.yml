@@ -1,7 +1,7 @@
 ---
- - name: welcome to Playbook1
-   debug:
-     msg: " welcome to Playbook1 - lets' call Playbook 2"
+- name: welcome to Playbook1
+  debug:
+    msg: " welcome to Playbook1 - lets' call Playbook 2"
 
 - name: call the roll Playbook2
   include_role:
