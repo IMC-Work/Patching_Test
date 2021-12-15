@@ -1,0 +1,12 @@
+---
+ - name: welcome to Playbook1
+   debug:
+     msg: " welcome to Playbook1 - lets' call Playbook 2"
+
+- name: call the roll Playbook2
+  include_role:
+   name: playbook2
+
+- name: end of Playbook1
+  debug:
+    msg: "end of playbok1, back to playbook"

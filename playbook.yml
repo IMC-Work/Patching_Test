@@ -1,0 +1,16 @@
+---
+- hosts: all
+  gather_facts: true
+  tasks:
+
+  - name: First Playbook start
+    debug:
+      msg: "start of playbook - let's call the roll Playbook1"
+
+  - name: call the roll Playbook1
+    include_role:
+      name: playbook1
+
+  - name: The end
+    debug:
+      msg: "All done"
