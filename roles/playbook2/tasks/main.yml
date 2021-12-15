@@ -1,4 +1,4 @@
 ---
- - name: welcome to Playbook2
-   debug:
-     msg: " welcome to Playbook2 - lets' get outta here"
+- name: welcome to Playbook2
+  debug:
+    msg: " welcome to Playbook2 - lets' get outta here"
