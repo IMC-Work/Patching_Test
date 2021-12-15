@@ -1,0 +1,4 @@
+---
+ - name: welcome to Playbook3
+   debug:
+     msg: " welcome to Playbook3 - lets' get outta here"
