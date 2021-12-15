@@ -1,4 +1,12 @@
 ---
-- name: welcome to Playbook2
+ - name: welcome to Playbook2 - patching one
+   debug:
+     msg: " welcome to Playbook2 - call Playbook3 (del wsus)"
+
+- name: call the roll Playbook3 - Delete WSUS Settings
+  include_role:
+    name: playbook3
+
+- name: Done Playbook3
   debug:
-    msg: " welcome to Playbook2 - lets' get outta here"
+    msg: "Done Playbook3 - continue with Playbook2"
